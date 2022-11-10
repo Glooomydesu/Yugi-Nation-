@@ -1,0 +1,495 @@
+#yugicards {
+  background-color: red;
+}
+#yugicards .yugicards {
+  min-height: 100px;
+  flex-direction: column;
+}
+#yugicards h2 {
+  color:white;
+  font-size: 2rem;
+}
+.yugioh {
+  padding-bottom:30px;
+}
+#yugioh5 {
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: auto;
+}
+#yugioh5 .yugioh5 {
+  min-height: 7vh;
+  background-color: red;
+}
+#yugioh5 .cards {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  max-width: 1300px;
+  padding: 0 10px;
+}
+#yugioh5 .cards1 ul {
+  list-style: none;
+  position: absolute;
+  background-color: rgb(31, 30, 30);
+  width: 100vw;
+  height: 100vh;
+  left: 100%;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  overflow-x: hidden;
+  transition: 0.5s ease left;
+}
+#yugioh5 .cards1 ul.active {
+  left: 0%;
+}
+#yugioh5 .cards1 ul a {
+  font-size: 3rem;
+  font-weight: 500;
+  text-decoration: none;
+  color: white;
+  padding: 20px;
+  display: block;
+}
+#yugioh5 .cards2 {
+  height: 50px;
+  width: 50px;
+  display: inline-block;
+  border: 2px solid white;
+  border-radius: 40%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 90;
+  cursor: pointer;
+  transform: scale(0.5);
+  margin-right: 10px;
+}
+#yugioh5 .cards2 .cards3 {
+  height: 1px;
+  width: 20px;
+  position: relative;
+  background-color: white;
+  z-index: -2;
+}
+#yugioh5 .cards2 .cards3::after,
+#yugioh5 .cards2 .cards3::before {
+  content: "";
+  position: absolute;
+  height: 90%;
+  width: 90%;
+  left: 0;
+  background-color: white;
+  transition: 0.2s ease;
+  transition-property: top, bottom;
+}
+#yugioh5 .cards2 .cards3::after {
+  top: 7px;
+}
+#yugioh5 .cards2 .cards3::before {
+  bottom: 7px;
+}
+#yugioh5 .cards2.active .cards3::before {
+  bottom: 0;
+}
+#yugioh5 .cards2.active .cards3::after {
+  top: 0;
+}
+  #yugioh5 .cards2 {
+    display: none;
+  }
+  #yugioh5 .cards1 ul {
+    position: initial;
+    display: block;
+    height: auto;
+    width: fit-content;
+    background-color: transparent;
+  }
+  #yugioh5 .cards1 ul li {
+    display: inline-block;
+  }
+  #yugioh5 .cards1 ul li a {
+    font-size: 2rem;
+  }
+  #yugioh5 .cards1 ul a:after {
+    display: none;
+  }
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 9px;
+  font-family: "Century Gothic", sans-serif;
+  scroll-behavior: smooth;
+}
+a {
+  text-decoration: none;
+}
+.yugioh1 {
+	max-width:1200px;
+	margin:auto;
+	overflow:auto;
+}
+.yugioh2 {
+	margin:5px;
+	float:left;
+	width:390px;
+	height:390px;
+}
+.yugioh3 {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+span1 {
+  color: white;
+}
+span2 {
+  color: red;
+}
+.cta {
+  display: inline-block;
+  color: white;
+  background-color: red;
+  margin-top: 40px;
+  transition: 0s ease;
+  transition-property: background-color, color;
+}
+.yugioh4 h1 {
+  font-size: 3rem;
+  color: white;
+}
+#cards4 {
+  background-size: cover;
+  background-position: top center;
+  position: relative;
+  z-index: 1;
+}
+#cards4::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: gray;
+  opacity: 1;
+  z-index: -1;
+}
+#cards4 .cards4 {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 50px;
+  justify-content: flex-start;
+}
+#cards4 h1 {
+  display: block;
+  width: fit-content;
+  font-size: 4.7rem;
+  position: relative;
+  color: transparent;
+  animation: text_reveal 1s ease forwards;
+}
+#cards4 h1:nth-child(3) {
+  animation: text_reveal_name 3s ease forwards;
+}
+#cards4 h1 span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0;
+  background-color: red;
+}
+#cards5 {
+  background-size: cover;
+  background-position: top center;
+  position: relative;
+  z-index: 1;
+}
+#cards5::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: gray;
+  opacity: 1;
+  z-index: -1;
+}
+#cards5 .cards5 {
+  flex-direction: column;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+#cards5 .cards5item {
+  width: 70%;
+  padding: 10px;
+  text-align: center;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#cards5 .icon {
+  width: 60px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+#cards5 .cards5info h1 {
+  font-size: 4.5rem;
+  font-weight: 450;
+  color: white;
+}
+@keyframes text_reveal_box {
+  50% {
+    width: 100%;
+    left: 0;
+  }
+  100% {
+    width: 0;
+    left: 100%;
+  }
+}
+@keyframes text_reveal {
+  100% {
+    color: white;
+  }
+}
+@keyframes text_reveal_name {
+  100% {
+    color: red;
+  }
+}
+  .cta {
+    font-size: 3rem;
+    padding: 20px 60px;
+  }
+  h1.yugicards1 {
+    font-size: 7.5rem;
+  }
+  #cards4 h1 {
+    font-size: 7.5rem;
+  }
+  #cards5 .cards5 {
+    flex-direction: column;
+    padding: 100px 0;
+    align-items: center;
+    justify-content: center;
+    min-width: 20vh;
+  }
+  #cards5 .cards5items {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 0;
+  }
+  #cards5 .cards5item {
+    width: 100%;
+    margin: 0;
+    flex-direction: row;
+  }
+  #cards5 .cards5item .icon {
+    height: 100px;
+    width: 100px;
+  }
+  #cards5 .cards5item .icon img {
+    object-fit: contain;
+  }
+  #cards5 .cards5item .cards5info {
+    width: 100%;
+    text-align: left;
+    padding-left: 20px;
+  }
+.yugicards2{
+  max-width: 975px;
+  margin: auto;
+  padding: 0 10px;
+}
+.yugicards2text{
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 20px 0;
+  border: 0;
+  background: white;
+  padding: 25px 45px;
+  outline: none;
+  color: black;
+}
+.yugicards3 {
+    padding-left:110px;
+}
+#yugicards4 {
+  background-size: cover;
+  background-position: top center;
+  position: relative;
+  z-index: 1;
+}
+#yugicards4::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: gray;
+  opacity: 1;
+  z-index: -1;
+}
+#yugicards4 .yugicards4 {
+  flex-direction: column;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+#yugicards4 .yugicards4-item {
+  width: 70%;
+  padding: 10px;
+  text-align: center;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#yugicards4 .icon {
+  width: 60px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+#yugicards4 .yugicards4info h1 {
+  font-size: 4.5rem;
+  font-weight: 450;
+  color: white;
+}
+#yugicards4 .yugicards4 {
+    flex-direction: column;
+    padding: 100px 0;
+    align-items: center;
+    justify-content: center;
+    min-width: 20vh;
+  }
+  #yugicards4 .yugicards4items {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 0;
+  }
+  #yugicards4 .yugicards4item {
+    width: 100%;
+    margin: 0;
+    flex-direction: row;
+  }
+  #yugicards4 .yugicards4item .icon {
+    height: 100px;
+    width: 100px;
+  }
+  #yugicards4 .yugicards4item .icon img {
+    object-fit: contain;
+  }
+  #yugicards4 .yugicards4item .yugicards4info {
+    width: 100%;
+    text-align: left;
+    padding-left: 20px;
+  }
+  #yugicards5 {
+  background-size: cover;
+  background-position: top center;
+  position: relative;
+  z-index: 1;
+}
+#yugicards5::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  z-index: -2;
+}
+#yugicards5 .yugicards5 {
+  flex-direction: column;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+#yugicards5 .yugicards5item {
+  width: 70%;
+  padding: 10px;
+  text-align: center;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#yugicards5 .icon {
+  width: 60px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+#yugicards5 .yugicards5info h1 {
+  font-size: 4.5rem;
+  font-weight: 450;
+  color: white;
+}
+#yugicards5 .yugicards5 {
+    flex-direction: column;
+    padding: 100px 0;
+    align-items: center;
+    justify-content: center;
+    min-width: 20vh;
+  }
+  #yugicards5 .yugicards5items {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 0;
+  }
+  #yugicards5 .yugicards5item {
+    width: 100%;
+    margin: 0;
+    flex-direction: row;
+  }
+  #yugicards5 .yugicards5item .icon {
+    height: 100px;
+    width: 100px;
+  }
+  #yugicards5 .yugicards5item .icon img {
+    object-fit: contain;
+  }
+  #yugicards5 .yugicards5item .yugicards5info {
+    width: 100%;
+    text-align: left;
+    padding-left: 20px;
+  }
